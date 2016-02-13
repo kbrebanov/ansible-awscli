@@ -1,2 +1,4 @@
 ---
 # defaults file for awscli
+
+awscli_version: 1.10.4

@@ -1,2 +1,19 @@
 ---
 # tasks file for awscli
+
+- name: Include distribution specific variables
+  include_vars: "{{ ansible_distribution }}.yml"
+  tags:
+    - awscli
+
+- include: Ubuntu.yml
+  when: ansible_distribution == "Ubuntu"
+  tags:
+    - awscli
+
+- name: Install awscli
+  pip:
+    name: awscli
+    version: "{{ awscli_version }}"
+  tags:
+    - awscli
