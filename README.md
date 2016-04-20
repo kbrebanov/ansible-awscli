@@ -26,7 +26,7 @@ Example Playbook
 ----------------
 
 Install awscli
-```
+```yaml
 - hosts: all
   roles:
     - kbrebanov.awscli
