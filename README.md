@@ -8,13 +8,13 @@ Installs awscli
 Requirements
 ------------
 
-This role requires Ansible 1.4 or higher.
+This role requires Ansible 1.9 or higher.
 
 Role Variables
 --------------
 
 | Name           | Default | Description                         |
-|----------------|---------|-------------------------------------|
+|:---------------|:--------|:------------------------------------|
 | awscli_version | 1.10.4  | Default installed version of awscli |
 
 Dependencies
