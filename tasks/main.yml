@@ -12,6 +12,7 @@
     - awscli
 
 - name: Install awscli
+  become: yes
   pip:
     name: awscli
     version: "{{ awscli_version }}"
